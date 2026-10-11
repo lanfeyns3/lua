@@ -4,3 +4,4 @@ project(lua)
 
 add_library(${PROJECT_NAME} STATIC onelua.c)
 target_compile_definitions(${PROJECT_NAME} PRIVATE MAKE_LIB)
+target_include_directories(${PROJECT_NAME} PUBLIC ./)
